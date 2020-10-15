@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4{
+    margin: 0;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+}
+
+.spoiler{
+    margin-bottom: 10px;
+}
+
+.heading, .description{
+    border: 2px solid black;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading:hover {
+    cursor: pointer;
+}
+
+.description{
+    display: none;
+}
+
