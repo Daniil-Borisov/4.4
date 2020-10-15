@@ -1,20 +1,16 @@
-$(document).ready(function(){
-    $('input:radio').click(function(){
-        if ($('#choose1').prop('checked')){
-            $(".heading").off();
+$(document).ready(function(){    
+    $(".heading").click(function(){
+        $('input:radio').click(function(){
             $('.description').slideUp();
-            $(".heading").click(function() {
-                $('.description').not($(this).next()).slideUp();
-                $(this).next().slideToggle();
-            })
+        })
+        
+        if ($('#choose1').prop('checked')){            
+            $('.description').not($(this).next()).slideUp();
+            $(this).next().slideToggle();
         }
          
         if ($('#choose2').prop('checked')) {
-            $(".heading").off();
-            $(".heading").click(function() {
-                $(this).next().slideToggle();
-            })
-
+            $(this).next().slideToggle();
         }
     })
 })
